@@ -1,0 +1,15 @@
+import mongoose from "mongoose";
+
+const scienceSchema = new mongoose.Schema({
+  author: { type: String, required: false },
+  title: { type: String, required: true },
+  description: { type: String, required: false },
+  url: { type: String, required: true },
+  urlToImage: { type: String, required: false },
+  publishedAt: { type: String, required: true },
+  content: { type: String, required: false },
+});
+
+const scienceModel = mongoose.model("science", scienceSchema);
+
+export default scienceModel;
