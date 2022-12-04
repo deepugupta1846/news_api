@@ -7,7 +7,7 @@ const educationSchema = new mongoose.Schema({
   url: { type: String, required: true },
   urlToImage: { type: String, required: false },
   publishedAt: { type: String, required: true },
-  content: { type: String, required: true },
+  content: { type: String, required: false },
 });
 
 const educationModel = mongoose.model("education", educationSchema);

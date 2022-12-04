@@ -7,7 +7,7 @@ const businessSchema = new mongoose.Schema({
   url: { type: String, required: true },
   urlToImage: { type: String, required: false },
   publishedAt: { type: String, required: true },
-  content: { type: String, required: true },
+  content: { type: String, required: false },
 });
 
 const businessModel = mongoose.model("business", businessSchema);
